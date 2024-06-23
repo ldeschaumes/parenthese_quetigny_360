@@ -9,7 +9,7 @@ config={
 			"autoLoad": true,
 			"compass": false,
 			"title": "La Parenth&egrave;se-Quetigny",
-			"author": "&#47;La parenth&egrave;se&#47;Coagul&#47;Gronux",
+			"author": "&#47;La parenth&egrave;se&#47;Coagul&#47",
 			"sceneFadeDuration": 1000,
 			"type": "equirectangular",
 			"maxPitch": 70,
