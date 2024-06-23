@@ -1,0 +1,483 @@
+config={
+		"strings": {
+			"loadButtonLabel": "Cliquez pour \n charger \nla visite",
+			"loadingLabel": "Chargement...",
+			"bylineLabel": "par %s"
+		},
+		"default": {
+			"firstScene": "scene_01",
+			"autoLoad": true,
+			"compass": false,
+			"title": "La Parenth&egrave;se-Quetigny",
+			"author": "&#47;La parenth&egrave;se&#47;Coagul&#47;Gronux",
+			"sceneFadeDuration": 1000,
+			"type": "equirectangular",
+			"maxPitch": 70,
+			"minPitch": -70,
+			"autoRotate": 3,
+			"autoRotateInactivityDelay": 10000
+		},
+		"scenes": {
+			"scene_01": {
+				"type": "equirectangular",
+				"yaw": 203,
+				"panorama": "./photos/scene_01.JPG",
+				"pitch": 0.05,
+				"hotSpots": [
+					{
+						"yaw": 203,
+						"type": "scene",
+						"text": "Entr&eacute;e la Parenth&egrave;se",
+						"sceneId": "scene_02"
+					},
+					{
+						"pitch": 0.05,
+						"yaw": 173,
+						"type": "info",
+						"text": "Entr&eacute;e salle de spectacle \n La manivelle"
+					}
+				]
+			},
+			"scene_02": {
+				"_comment": "//**************Hall d\'entr&eacute;e***************",
+				"type": "equirectangular",
+				"panorama": "./photos/scene_02.JPG",
+				"yaw": -53,
+				"hotSpots": [
+					{
+						"pitch": 0.05,
+						"yaw": -4,
+						"type": "scene",
+						"text": "Sortie",
+						"sceneId": "scene_01"
+					},
+					{
+						"pitch": 0.05,
+						"yaw": 173,
+						"type": "scene",
+						"text": "Le patio",
+						"sceneId": "scene_03"
+					},
+					{
+						"pitch": -27,
+						"yaw": 107,
+						"type": "info",
+						"text": "Borne de prêt"
+					},
+					{
+						"pitch": -20,
+						"yaw": -99,
+						"type": "info",
+						"text": "Borne de prêt"
+					},
+					{
+						"pitch": -3.5,
+						"yaw": 77,
+						"type": "scene",
+						"text": "Caf&eacute; solidaire \n Salle \'La manivelle\'",
+						"sceneId": "scene_05"
+					},
+					{
+						"pitch": 0.05,
+						"yaw": -108,
+						"type": "scene",
+						"text": "Le bric &agrave; brac",
+						"sceneId": "scene_10"
+					}
+				]
+			},
+			"scene_03": {
+				"_comment": "//****************Le patio****************",
+				"type": "equirectangular",
+				"panorama": "./photos/scene_03.JPG",
+				"hotSpots": [
+					{
+						"pitch": 0.05,
+						"yaw": 2,
+						"type": "scene",
+						"text": "Espace jeune",
+						"sceneId": "scene_04"
+					},
+					{
+						"pitch": 0.05,
+						"yaw": 173,
+						"type": "scene",
+						"text": "Hall d\'entr&eacute;e",
+						"sceneId": "scene_02"
+					}
+				]
+			},
+			"scene_04": {
+				"_comment": "//*************Espace jeune*******************",
+				"type": "equirectangular",
+				"panorama": "./photos/scene_04.JPG",
+				"yaw": -53,
+				"pitch": 0.05,
+				"hotSpots": [
+					{
+						"pitch": 0.05,
+						"yaw": -82,
+						"type": "scene",
+						"text": "Le fablab",
+						"sceneId": "scene_07"
+					},
+					{
+						"pitch": 0.05,
+						"yaw": -109,
+						"type": "scene",
+						"text": "La marelle",
+						"sceneId": "scene_11"
+					},
+					{
+						"pitch": 0.05,
+						"yaw": 101,
+						"type": "scene",
+						"text": "la bulle",
+						"sceneId": "scene_14"
+					},
+					{
+						"pitch": 0.05,
+						"yaw": 159,
+						"type": "scene",
+						"text": "La Kabane",
+						"sceneId": "scene_13"
+					},
+					{
+						"pitch": 0.05,
+						"yaw": 14,
+						"type": "scene",
+						"text": "Le patio",
+						"sceneId": "scene_03"
+					},
+					{
+						"yaw": -51,
+						"type": "scene",
+						"text": "Le bric &agrave; brac",
+						"cssClass": "droite",
+						"sceneId": "scene_10"
+					}
+				]
+			},
+			"scene_05": {
+				"_comment": "//*************Caf&eacute; solidaire*******************",
+				"type": "equirectangular",
+				"panorama": "./photos/scene_05.JPG",
+				"hotSpots": [
+					{
+						"pitch": 3,
+						"yaw": -34,
+						"type": "scene",
+						"text": "Le patio",
+						"cssClass": "gauche",
+						"sceneId": "scene_03"
+					},
+					{
+						"pitch": -7,
+						"yaw": -20,
+						"type": "scene",
+						"text": "Hall d\'entr&eacute;e",
+						"sceneId": "scene_02"
+					},
+					{
+						"pitch": 0.05,
+						"yaw": -132,
+						"type": "info",
+						"text": "Cloison amovible"
+					},
+					{
+						"pitch": 0.05,
+						"yaw": 173,
+						"type": "scene",
+						"text": "La manivelle",
+						"sceneId": "scene_06"
+					},
+					{
+						"pitch": 0.05,
+						"yaw": -87,
+						"type": "scene",
+						"text": "Le tremplin",
+						"sceneId": "scene_15"
+					}
+				]
+			},
+			"scene_06": {
+				"_comment": "//*************La manivelle*******************",
+				"type": "equirectangular",
+				"panorama": "./photos/scene_06.JPG",
+				"pitch": -6,
+				"hotSpots": [
+					{
+						"yaw": 6,
+						"type": "scene",
+						"text": "Caf&eacute; solidaire",
+						"sceneId": "scene_05"
+					}
+				]
+			},
+			"scene_07": {
+				"_comment": "//*************Le fablab*******************",
+				"type": "equirectangular",
+				"panorama": "./photos/scene_07.JPG",
+				"yaw": 46,
+				"pitch": -16,
+				"hotSpots": [
+					{
+						"yaw": 84,
+						"type": "scene",
+						"text": "Espace jeune",
+						"sceneId": "scene_04"
+					},
+					{
+						"yaw": 0.11,
+						"type": "scene",
+						"text": "Salle de r&eacute;union",
+						"sceneId": "scene_08"
+					}
+				]
+			},
+			"scene_08": {
+				"_comment": " //*************Salle de r&eacute;union*******************",
+				"type": "equirectangular",
+				"panorama": "./photos/scene_08.JPG",
+				"yaw": 49,
+				"pitch": -16,
+				"hotSpots": [
+					{
+						"yaw": 65,
+						"type": "scene",
+						"text": "Bric &agrave; brac",
+						"sceneId": "scene_10"
+					},
+					{
+						"yaw": -169,
+						"type": "scene",
+						"text": "fablab",
+						"sceneId": "scene_07"
+					}
+				]
+			},
+			"scene_09": {
+				"_comment": " //*************Salle de r&eacute;union*******************",
+				"type": "equirectangular",
+				"panorama": "./photos/scene_08.JPG",
+				"yaw": 49,
+				"pitch": -16,
+				"hotSpots": [
+					{
+						"yaw": 65,
+						"type": "scene",
+						"text": "Bric &agrave; brac",
+						"sceneId": "scene_10"
+					},
+					{
+						"yaw": -169,
+						"type": "scene",
+						"text": "Fablab",
+						"sceneId": "scene_07"
+					}
+				]
+			},
+			"scene_10": {
+				"_comment": "//*************bric &agrave; brac******************",
+				"type": "equirectangular",
+				"panorama": "./photos/scene_09.JPG",
+				"yaw": 131,
+				"pitch": -16,
+				"hotSpots": [
+					{
+						"yaw": -154,
+						"type": "scene",
+						"text": "Hall d\'entr&eacute;e",
+						"sceneId": "scene_04"
+					},
+					{
+						"yaw": 2,
+						"pitch": 0,
+						"type": "scene",
+						"text": "Fablab",
+						"cssClass": "droite",
+						"sceneId": "scene_07"
+					},
+					{
+						"yaw": 8,
+						"type": "scene",
+						"text": "L\'atelier",
+						"cssClass": "droite",
+						"sceneId": "scene_09"
+					},
+					{
+						"yaw": -10,
+						"type": "scene",
+						"text": "Espace jeune",
+						"sceneId": "scene_04"
+					}
+				]
+			},
+			"scene_11": {
+				"_comment": "//*************La marelle*******************",
+				"type": "equirectangular",
+				"panorama": "./photos/scene_11.JPG",
+				"yaw": 49,
+				"pitch": -16,
+				"hotSpots": [
+					{
+						"yaw": 119,
+						"type": "scene",
+						"text": "Espace jeune",
+						"sceneId": "scene_04"
+					},
+					{
+						"yaw": -80,
+						"type": "scene",
+						"text": "Le nid",
+						"sceneId": "scene_12"
+					},
+					{
+						"yaw": 149,
+						"type": "scene",
+						"text": "La kabane",
+						"sceneId": "scene_13"
+					}
+				]
+			},
+			"scene_12": {
+				"_comment": "//*************Le nid*******************",
+				"type": "equirectangular",
+				"panorama": "./photos/scene_12.JPG",
+				"yaw": 49,
+				"pitch": -16,
+				"hotSpots": [
+					{
+						"yaw": 135,
+						"type": "scene",
+						"text": "La marelle",
+						"sceneId": "scene_11"
+					}
+				]
+			},
+			"scene_13": {
+				"_comment": "//*************La kabane*******************",
+				"type": "equirectangular",
+				"panorama": "./photos/scene_13.JPG",
+				"yaw": 49,
+				"pitch": -16,
+				"hotSpots": [
+					{
+						"yaw": -10,
+						"pitch" : -5,
+						"type": "scene",
+						"text": "Espace jeune",
+						"sceneId": "scene_04"
+					},
+					{
+						"yaw": 90,
+						"type": "scene",
+						"text": "La bulle",
+						"sceneId": "scene_14"
+					},
+					{
+						"yaw": 66,
+						"type": "scene",
+						"text": "Le tremplin",
+						"sceneId": "scene_15"
+					},
+					{
+						"yaw": -89,
+						"type": "scene",
+						"text": "La marelle",
+						"sceneId": "scene_11"
+					},
+					{
+						"yaw": -24,
+						"type": "scene",
+						"text": "Bric &agrave; brac",
+						"sceneId": "scene_10"
+					}
+				]
+			},
+			"scene_14": {
+				"_comment": "//*************La bulle*******************",
+				"type": "equirectangular",
+				"panorama": "./photos/scene_14.JPG",
+				"yaw": 49,
+				"pitch": -16,
+				"hotSpots": [
+					{
+						"yaw": 107,
+						"type": "scene",
+						"text": "Espace jeune",
+						"sceneId": "scene_04"
+					},
+					{
+						"yaw": 68,
+						"type": "scene",
+						"text": "La kabane",
+						"sceneId": "scene_13"
+					},
+					{
+						"yaw": 173,
+						"type": "scene",
+						"text": "Le tremplin",
+						"sceneId": "scene_15"
+					},
+					{
+						"yaw": 167,
+						"type": "scene",
+						"text": "Caf&eacute; solidaire",
+						"sceneId": "scene_05"
+					}
+				]
+			},
+			"scene_15": {
+				"_comment": "//*************Le tremplin*******************",
+				"type": "equirectangular",
+				"panorama": "./photos/scene_15.JPG",
+				"yaw": 49,
+				"pitch": -16,
+				"hotSpots": [
+					{
+						"yaw": 8,
+						"type": "scene",
+						"text": "La bulle",
+						"sceneId": "scene_14"
+					},
+					{
+						"yaw": 167,
+						"type": "scene",
+						"text": "Caf&eacute; solidaire",
+						"sceneId": "scene_05"
+					},
+					{
+						"yaw": -18,
+						"type": "scene",
+						"text": "Salle r&eacute;union",
+						"cssClass": "gauche",
+						"sceneId": "scene_16"
+					},
+					{
+						"yaw": -168,
+						"type": "scene",
+						"text": "La manivelle",
+						"cssClass": "droite",
+						"sceneId": "scene_06"
+					}
+				]
+			},
+			"scene_16": {
+				"_comment": "//*************Salle reunion Le tremplin*******************",
+				"type": "equirectangular",
+				"panorama": "./photos/scene_16.JPG",
+				"yaw": -122,
+				"pitch": -16,
+				"hotSpots": [
+					{
+						"yaw": -103,
+						"type": "scene",
+						"text": "Le tremplin",
+						"sceneId": "scene_15"
+					}
+				]
+			}
+		}
+	}
+;
