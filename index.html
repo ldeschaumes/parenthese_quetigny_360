@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>La parenth&egrave;se Quetigny</title>
+	<link rel="stylesheet" href="./css/pannellum.css" />
+	<script type="text/javascript" src="./js/config.json"></script>	
+	<script type="text/javascript" src="./js/pannellum.js"></script>
+	<script type="text/javascript" src="./js/libpannellum.js"></script>
+	<style>
+		#panorama {
+			width: 1200px;
+			height: 800px;
+			margin: auto;
+		}
+		.droite {
+	        height: 26px;
+	        width: 26px;
+	        background-image: url('css/img/sprites.svg');
+	        background-position: 0 -205px;
+	        background-color: rgba(255, 255, 255, 0.75);
+		  	border-radius: 13px;
+		    border-top-left-radius: 13px;
+		    border-top-right-radius: 13px;
+		    border-bottom-right-radius: 13px;
+		    border-bottom-left-radius: 13px;
+		}	
+		.gauche {
+	        height: 26px;
+	        width: 26px;
+	        background-image: url('css/img/sprites.svg');
+	        background-position: 0 -225px;
+	        background-color: rgba(255, 255, 255, 0.75);
+		  	border-radius: 13px;
+		    border-top-left-radius: 13px;
+		    border-top-right-radius: 13px;
+		    border-bottom-right-radius: 13px;
+		    border-bottom-left-radius: 13px;
+		}
+					
+		
+	</style>
+</head>
+
+<body>
+	<div id="panorama"></div>
+	<script>
+		pannellum.viewer('panorama',config);
+	</script>
+</body>
+
+</html>
